@@ -42,5 +42,7 @@ func calculateFutureValue(investmentAmount float64, expectedReturnRate float64, 
 	// IF YOU DECLARE YOUR RETURN VALUES IN THE RETURN DECLARATION ABOVE, YOU DON'T NEED TO DEFINE THEM IN CODE
 	fv = investmentAmount * math.Pow(1+expectedReturnRate/100, years)
 	rfv = fv / math.Pow((1+inflationRate/100), years)
-	return fv, rfv 
+	// return fv, rfv 
+	// Since we know what we are returning above, we don't need to explicitly state that we are returning them below. Probably should, but don't have to.
+	return
 }
